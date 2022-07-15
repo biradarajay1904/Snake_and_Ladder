@@ -5,7 +5,7 @@ package com.Snake.ladder;
 
 */
 
-public class Uc1 {
+public class SnakeAndLadder {
 	 static  int START_POSITION=0;
 
 	    public static void main(String[] args) {
