@@ -1,9 +1,4 @@
 package com.Snake.ladder;
-/**
-* ajay biradar
-
-
-*/
 
 public class SnakeAndLadder {
 	 static  int START_POSITION=0;
