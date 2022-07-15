@@ -7,12 +7,14 @@ public class SnakeAndLadder {
     static final int IF_LADDER =1;
     static final int IF_SNAKE =2;
     static int currentposition=0;
+    static int dicecount=0;
 
     public static void main(String[] args) {
         System.out.println("Welcome to Snake and ladder game");
         while(currentposition<100) {
             int dice = (int) (Math.random() * 10) % 6 + 1;
             int option = (int) (Math.random() * 10) % 3;
+            ++dicecount;
 
             if (option == IF_LADDER) {
                 System.out.println("ladder!!");
@@ -25,6 +27,7 @@ public class SnakeAndLadder {
 
             } else {
                 System.out.println("N0 play");
+                
             }
             if(currentposition>START_POSITION){
                 currentposition-=START_POSITION;
@@ -34,7 +37,10 @@ public class SnakeAndLadder {
             }
 
             System.out.println("currentposition: "+currentposition);
+
         }
+        System.out.println("currentposition: " + currentposition + "\ndicecount: " + dicecount);
+
 
 
     }
